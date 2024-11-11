@@ -21,5 +21,6 @@ document.querySelectorAll('.box').forEach(box => {
             box.classList.add('active');
             radioButton.checked = true;
         }
+    
     });
 });
