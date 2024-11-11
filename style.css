@@ -1,0 +1,201 @@
+/* CSS starts here */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Boxes CSS */
+.box {
+    width: 50%;
+    margin-top: 3%;
+    padding: 5% 0;
+    border: 2px solid #FF6B82;
+}
+#box2 {
+    position: relative;
+}
+.box span {
+    border-radius: 5px;
+    color: white;
+    padding: 3px 5px;
+    width: fit-content;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: #FF6B82;
+}
+.box:hover {
+    background-color: #eef;
+}
+.box h3 {
+    display: inline;
+    margin: 0;
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+.box.active {
+    background-color: #eef;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.box-content {
+    display: none;
+    margin-top: 20px;
+}
+/* inner content CSS */
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.label {
+    margin-right: 10px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.selectors {
+    display: flex;
+    gap: 15px;
+}
+.selector-group select {
+    padding: 8px;
+    font-size: 14px;
+    width: 120px;
+}
+.box-content {
+    padding: 2%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.box.active .box-content {
+    max-height: fit-content;
+    padding: 0% 5% 5% 5%;
+    text-align: center;
+}
+/* CSS for the active box */
+.box-content select {
+    width: fit-content;
+}
+#box3,
+#box2,
+#box1 input {
+    accent-color: #FF6B82;
+}
+.box .heading {
+    margin-bottom: 10%;
+}
+.add_to_cart a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.add_to_cart {
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 14.52px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 50%;
+    padding: 2% 0;
+    border: none;
+    background-color: #FF6B82;
+}
+.freeShip {
+    width: 50%;
+    padding: 1% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.free_content {
+    color: #FF6B82;
+}
+.cards_align {
+    display: flex;
+    justify-content: space-around;
+}
+.card_left {
+    width: 70%;
+}
+.card_left p {
+    margin-top: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 15%;
+    line-height: 1.5;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+.compare_price {
+    color: grey;
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: line-through;
+}
+.copyright {
+    font-size: 10px;
+    width: 50%;
+    text-align: right;
+}
+.badge {
+    position: absolute;
+    top: -5%;
+    right: 2%;
+    background: #FF6B82;
+    color: #ffffff;
+    padding: 2%;
+    border-radius: 5px;
+    font-weight: 700;
+}
+/* Media queries for the device below 425px*/
+@media (max-width:426px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        margin-top: 3%;
+    }
+    .box,
+    .freeShip,
+    .add_to_cart,
+    .copyright {
+        width: 100vw;
+    }
+    .freeShip {
+        padding: 2% 0;
+        
+    }
+    .badge{
+    
+        padding: 1%;
+    }
+}
