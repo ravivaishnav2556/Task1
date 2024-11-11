@@ -6,6 +6,7 @@
 
 body {
     width: 100vw;
+    overflow-x: hidden;
 
 }
 
@@ -180,6 +181,9 @@ body {
     * {
         margin: 0;
         padding: 0;
+    }
+    body{
+        overflow-x: hidden;
     }
     .box{
         margin-top: 3%;

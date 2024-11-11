@@ -1,4 +1,5 @@
-// Add event listeners to each box
+
+        // Add event listeners to each box
 document.querySelectorAll('.box').forEach(box => {
     box.addEventListener('click', () => {
         const boxId = box.id;
@@ -24,3 +25,4 @@ document.querySelectorAll('.box').forEach(box => {
     
     });
 });
+    
